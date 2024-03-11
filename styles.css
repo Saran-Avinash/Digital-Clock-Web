@@ -1,0 +1,57 @@
+
+ 
+
+
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+  
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    
+}
+
+
+#clock-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-size: 6rem;
+   width: 100vw;
+}
+
+p{
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    
+    text-align: center;
+    margin: auto;
+    padding:10px;
+    
+}
+
+p::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background-color: rgba(91, 88, 88, 0.503);
+    opacity:0.1;
+    z-index:-1;
+    
+}
